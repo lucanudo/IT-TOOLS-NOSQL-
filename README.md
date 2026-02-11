@@ -1,2 +1,3 @@
-# IT-TOOLS-NOSQL-
-Assessing the Sustainability of Nuclear Energy: Efficiency, Safety, and Resource Perspectives through NoSQL Analysis
+# Assessing the Sustainability of Nuclear Energy: Efficiency, Safety, and Resource Perspectives through NoSQL Analysis
+
+This study investigates the sustainability of nuclear energy compared to other electricity sources, focusing on three main dimensions: effi- ciency, safety, and resource availability. Using a curated collection of datasets imported into a MongoDB database, we analyze global and U.S.-specific nuclear power plant data, uranium production and prices, and safety metrics measured in deaths per terawatt-hour. The find- ings provide a data-driven overview of nuclear energy’s performance, highlighting trends in capacity, generation, and safety, as well as the availability of uranium resources to support continued nuclear produc- tion. The study aims to offer an objective and balanced assessment of nuclear energy within the broader electricity generation landscape.
