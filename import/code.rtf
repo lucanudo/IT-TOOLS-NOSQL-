@@ -1,0 +1,30 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2757
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # Import CSV files into MongoDB (database: nuclear_energy)\
+mongoimport --db nuclear_energy --collection number_of_plants_producing_uranium_in_us --type csv --headerline --file number_of_plants_producing_uranium_in_us.csv\
+mongoimport --db nuclear_energy --collection power_plant_database_global --type csv --headerline --file power_plant_database_global.csv\
+mongoimport --db nuclear_energy --collection rates_death_from_energy_production_per_twh --type csv --headerline --file rates_death_from_energy_production_per_twh.csv\
+mongoimport --db nuclear_energy --collection uranium_production_summary_us --type csv --headerline --file uranium_production_summary_us.csv\
+mongoimport --db nuclear_energy --collection uranium_purchase_price_us --type csv --headerline --file uranium_purchase_price_us.csv\
+mongoimport --db nuclear_energy --collection us_nuclear_generating_statistics_1971_2021 --type csv --headerline --file us_nuclear_generating_statistics_1971_2021.csv\
+mongoimport --db nuclear_energy --collection world_electricity_generation --type csv --headerline --file world_electricity_generation.csv\
+mongoimport --db nuclear_energy --collection world_nuclear_energy_generation --type csv --headerline --file world_nuclear_energy_generation.csv\
+\
+# List JSON files (optional, to check)\
+ls *.json\
+\
+# Import JSON files into MongoDB (database: energia)\
+mongoimport --db energia --collection number_of_plants_producing_uranium_in_us --file number_of_plants_producing_uranium_in_us.json --jsonArray\
+mongoimport --db energia --collection power_plant_database_global --file power_plant_database_global.json --jsonArray\
+mongoimport --db energia --collection rates_death_from_energy_production_per_twh --file rates_death_from_energy_production_per_twh.json --jsonArray\
+mongoimport --db energia --collection uranium_production_summary_us --file uranium_production_summary_us.json --jsonArray\
+mongoimport --db energia --collection uranium_purchase_price_us --file uranium_purchase_price_us.json --jsonArray\
+mongoimport --db energia --collection us_nuclear_generating_statistics --file us_nuclear_generating_statistics.json --jsonArray\
+mongoimport --db energia --collection world_electricity_generation --file world_electricity_generation.json --jsonArray\
+mongoimport --db energia --collection world_nuclear_energy_generation --file world_nuclear_energy_generation.json --jsonArray\
+}
